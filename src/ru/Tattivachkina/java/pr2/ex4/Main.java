@@ -10,5 +10,9 @@ public class Main {
         house.addDogs(arr2);
         house.addDogs(arr3);
         house.Info();
+        /*
+        dgdfgsdfgsdfgsdfg
+
+         */
     }
 }
