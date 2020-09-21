@@ -1,4 +1,4 @@
-package ru.Tattivachkina.java.pr4.ex1;
+package ru.Tattivachkina.java.pr4;
 
 public class Rectangle extends Shape {
     double width;
