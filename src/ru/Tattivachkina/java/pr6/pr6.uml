@@ -32,7 +32,9 @@
     </edge>
   </edges>
   <settings layout="Hierarchic Group" zoom="0.8160779537149817" x="221.0" y="400.5" />
-  <SelectedNodes />
+  <SelectedNodes>
+    <node>ru.Tattivachkina.java.pr6.MovablePoint</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>
