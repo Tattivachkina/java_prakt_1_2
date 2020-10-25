@@ -43,24 +43,22 @@ public class Window extends JFrame {
         comboBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (comboBox.getSelectedIndex() == 0) {
+                if (comboBox.getSelectedIndex() == 0)
                     label3.setText("4 Н/кг");
-                } else if (comboBox.getSelectedIndex() == 1) {
+                if (comboBox.getSelectedIndex() == 1)
                     label3.setText("9 Н/кг");
-                } else if (comboBox.getSelectedIndex() == 2) {
+                if (comboBox.getSelectedIndex() == 2)
                     label3.setText("10 Н/кг");
-                } else if (comboBox.getSelectedIndex() == 3) {
+                if (comboBox.getSelectedIndex() == 3)
                     label3.setText("4 Н/кг");
-                } else if (comboBox.getSelectedIndex() == 4) {
+                if (comboBox.getSelectedIndex() == 4)
                     label3.setText("25 Н/кг");
-                } else if (comboBox.getSelectedIndex() == 5) {
+                if (comboBox.getSelectedIndex() == 5)
                     label3.setText("9 Н/кг");
-                } else if (comboBox.getSelectedIndex() == 6) {
+                if (comboBox.getSelectedIndex() == 6)
                     label3.setText("9 Н/кг");
-                } else if (comboBox.getSelectedIndex() == 7) {
+                if (comboBox.getSelectedIndex() == 7)
                     label3.setText("11 Н/кг");
-                }
-
             }
         });
     }
