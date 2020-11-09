@@ -13,5 +13,4 @@ public class SortingStudentsByGPA implements Comparator <Student> {
         else
             return 0;
     }
-
 }
