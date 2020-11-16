@@ -1,6 +1,5 @@
 package ru.Tattivachkina.java.pr24.ex2;
 
-import java.util.StringTokenizer;
 
 public class Address {
     private String country, region, town, street, house, housing, apartment;
