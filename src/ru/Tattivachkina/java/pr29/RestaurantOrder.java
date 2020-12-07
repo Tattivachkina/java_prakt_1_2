@@ -1,14 +1,41 @@
 package ru.Tattivachkina.java.pr29;
 
-import java.util.HashMap;
 
 public class RestaurantOrder implements Order {
-    private InternetOrder<Item> position;
-    private int count;
-    HashMap<String, Order> hashtable = new HashMap<String, Order>();
+    private Item[] items;
 
-    public RestaurantOrder() {
-        position = null;
+    public RestaurantOrder(Item[] items) {
+        this.items = items;
+    }
+
+    @Override
+    public int count() {
+        return items.length;
+    }
+
+    @Override
+    public int count(String name) {
+        int count = 0;
+        for (Item item: items) {
+            if (item.getName().equals(name)) {
+                count += 1;
+            }
+        }
+        return count;
+    }
+
+    @Override
+    public Item[] getItems() {
+        return items;
+    }
+
+    @Override
+    public int total() {
+        int total = 0;
+        for (Item item : items) {
+            total += item.getCost();
+        }
+        return total;
     }
 
     @Override
@@ -17,62 +44,22 @@ public class RestaurantOrder implements Order {
     }
 
     @Override
-    public boolean addPosition(Item a, HashMap<String, Order> hashMap) {
+    public String[] name() {
+        return new String[0];
+    }
+
+    @Override
+    public boolean delete(String name) {
         return false;
     }
 
     @Override
-    public boolean addPosition(HashMap<String, Order> hashMap) {
-        return false;
-    }
-
-    @Override
-    public int delete(Item a) {
+    public int deleteAll(String name) {
         return 0;
     }
 
     @Override
-    public int delete(Item a, HashMap<String, Order> hashMap) {
-        return 0;
-    }
-
-    @Override
-    public int count() {
-        return 0;
-    }
-
-    @Override
-    public Item getCounts(HashMap<String, Order> hashMap) {
-        return null;
-    }
-
-    @Override
-    public Item arrayCounts() {
-        return null;
-    }
-
-    @Override
-    public Item arrayCountsSorted() {
-        return null;
-    }
-
-    @Override
-    public int cost() {
-        return 0;
-    }
-
-    @Override
-    public int totalOrder(String name) {
-        return 0;
-    }
-
-    @Override
-    public int total(Item a) {
-        return 0;
-    }
-
-    @Override
-    public Item arrayCountsNames() {
-        return null;
+    public Item[] sortedItem() {
+        return new Item[0];
     }
 }
